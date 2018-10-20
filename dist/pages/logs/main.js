@@ -1,15 +1,27 @@
 require("../../common/manifest.js");
 require("../../common/vendor.js");
-global.webpackJsonp([1],{
-
-/***/ 23:
+global.webpackJsonp([1],[
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(14);
 
 
 
@@ -17,17 +29,16 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 app.$mount();
 
 /***/ }),
-
-/***/ 24:
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_template_compiler_index_id_data_v_3923394d_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_template_compiler_index_id_data_v_3923394d_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(18);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(25)
+  __webpack_require__(15)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -71,38 +82,28 @@ if (false) {(function () {
 
 
 /***/ }),
-
-/***/ 25:
+/* 15 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 26:
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_index__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_card__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_index__ = __webpack_require__(17);
 //
 //
 //
 //
 //
 //
-//
-//
-//
-//
-
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  components: {
-    card: __WEBPACK_IMPORTED_MODULE_1__components_card__["a" /* default */]
-  },
+  components: {},
 
   data: function data() {
     return {
@@ -118,8 +119,7 @@ if (false) {(function () {
 });
 
 /***/ }),
-
-/***/ 27:
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -150,28 +150,12 @@ function formatTime(date) {
 });
 
 /***/ }),
-
-/***/ 28:
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('ul', {
-    staticClass: "container log-list"
-  }, _vm._l((_vm.logs), function(log, index) {
-    return _c('li', {
-      key: index,
-      staticClass: "log-item",
-      class: {
-        red: _vm.aa
-      }
-    }, [_c('card', {
-      attrs: {
-        "text": (index + 1) + ' . ' + log,
-        "mpcomid": '0-' + index
-      }
-    })], 1)
-  }))], 1)
+  return _c('div', [_vm._v("\n  abc\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -185,6 +169,5 @@ if (false) {
 }
 
 /***/ })
-
-},[23]);
+],[13]);
 //# sourceMappingURL=main.js.map

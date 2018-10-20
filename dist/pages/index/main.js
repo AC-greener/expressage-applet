@@ -1,15 +1,22 @@
 require("../../common/manifest.js");
 require("../../common/vendor.js");
-global.webpackJsonp([3],{
-
-/***/ 15:
+global.webpackJsonp([2],[
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(9);
 
 
 
@@ -17,17 +24,16 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MOD
 app.$mount();
 
 /***/ }),
-
-/***/ 16:
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_template_compiler_index_id_data_v_8d8702ec_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_script_index_0_index_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_template_compiler_index_id_data_v_8d8702ec_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_1_1_4_mpvue_loader_lib_selector_type_template_index_0_index_vue__ = __webpack_require__(12);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(17)
+  __webpack_require__(10)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -71,19 +77,16 @@ if (false) {(function () {
 
 
 /***/ }),
-
-/***/ 17:
+/* 10 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 18:
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_card__ = __webpack_require__(2);
 //
 //
 //
@@ -108,21 +111,25 @@ if (false) {(function () {
 //
 //
 //
-
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      motto: 'Hello World',
+      motto: '佩奇',
       userInfo: {}
     };
   },
 
 
-  components: {
-    card: __WEBPACK_IMPORTED_MODULE_0__components_card__["a" /* default */]
-  },
+  components: {},
 
   methods: {
     bindViewTap: function bindViewTap() {
@@ -155,8 +162,7 @@ if (false) {(function () {
 });
 
 /***/ }),
-
-/***/ 22:
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -172,6 +178,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     }
   }, [_c('div', {
+    staticClass: "swiper"
+  }, [_vm._v("\n    轮播图\n  ")]), _vm._v(" "), _c('div', {
     staticClass: "userinfo",
     attrs: {
       "eventid": '0'
@@ -187,21 +195,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     }
   }) : _vm._e(), _vm._v(" "), _c('div', {
     staticClass: "userinfo-nickname"
-  }, [_c('card', {
-    attrs: {
-      "text": _vm.userInfo.nickName,
-      "mpcomid": '0'
-    }
-  })], 1)]), _vm._v(" "), _c('div', {
-    staticClass: "usermotto"
-  }, [_c('div', {
-    staticClass: "user-motto"
-  }, [_c('card', {
-    attrs: {
-      "text": _vm.motto,
-      "mpcomid": '1'
-    }
-  })], 1)]), _vm._v(" "), _c('form', {
+  })]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('form', {
     staticClass: "form-container"
   }, [_c('input', {
     directives: [{
@@ -249,14 +243,28 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         _vm.motto = $event.target.value
       }
     }
-  })]), _vm._v(" "), _c('a', {
-    staticClass: "counter",
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "footerNav"
+  }, [_c('div', {
+    staticClass: "navItem"
+  }, [_vm._v("首页")]), _vm._v(" "), _c('div', {
+    staticClass: "navItem"
+  }, [_vm._v("发布")]), _vm._v(" "), _c('div', {
+    staticClass: "navItem"
+  }, [_c('router-link', {
     attrs: {
-      "href": "/pages/counter/main"
+      "to": "/pages/my/index",
+      "mpcomid": '0'
     }
-  }, [_vm._v("去往Vuex示例页面")])], 1)
+  }, [_vm._v("我的")])], 1)])], 1)
 }
-var staticRenderFns = []
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "usermotto"
+  }, [_c('div', {
+    staticClass: "user-motto"
+  })])
+}]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -268,6 +276,5 @@ if (false) {
 }
 
 /***/ })
-
-},[15]);
+],[8]);
 //# sourceMappingURL=main.js.map
