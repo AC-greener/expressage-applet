@@ -23,5 +23,5 @@
   margin: 20rpx;
   height: 300rpx;
   width: 300rpx;
-  border: 2rpx solid red;
+  border: 2rpx solid #1296db;
 }

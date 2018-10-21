@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import { formatTime } from '@/utils/index'
 
 export default {
   components: {
@@ -14,13 +13,10 @@ export default {
 
   data () {
     return {
-      logs: []
     }
   },
 
   created () {
-    const logs = (wx.getStorageSync('logs') || [])
-    this.logs = logs.map(log => formatTime(new Date(log)))
   }
 }
 </script>

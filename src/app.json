@@ -7,21 +7,25 @@
     "list": [
       {
         "pagePath": "pages/index/main",
-        "text": "发布"
+        "text": "发布",
+        "iconPath": "static/img/publish.png",
+        "selectedIconPath": "static/img/publishActived.png"
       },
       {
         "pagePath": "pages/my/main",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "static/img/me.png",
+        "selectedIconPath": "static/img/meActived.png"
       }
     ],
-    "selectedColor": "blue",
+    "selectedColor": "#1296db",
     "borderStyle": "black",
     "color": "#ccc"
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ddd",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTitleText": "科大快递帮",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "light"
   }
 }

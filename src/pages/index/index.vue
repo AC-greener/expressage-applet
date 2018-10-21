@@ -16,11 +16,8 @@
 
 <script>
 import MySwiper from '@/components/swiper'
-
+import { get } from '@/utils/index.js'
 export default {
-  onReady () {
-    console.log("11111111111111")
-  },
   components: {
     MySwiper,
   },
@@ -40,10 +37,6 @@ export default {
     }
   },
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      wx.navigateTo({ url })
-    },
     getUserInfo () {
       // 调用登录接口
       wx.login({
@@ -51,7 +44,6 @@ export default {
           wx.getUserInfo({
             success: (res) => {
               this.userInfo = res.userInfo
-              console.log(this.userInfo)
             }
           })
         }
@@ -62,9 +54,12 @@ export default {
     }
   },
 
-  created () {
+  async created () {
     // 调用应用实例的方法获取全局数据
-    this.getUserInfo()
+    await this.getUserInfo()
+    await get('/weapp/demo')
+    console.log('成功4')
+    
   }
 }
 </script>
@@ -73,7 +68,6 @@ export default {
 
  .container {
     height: 100%;
-
   }
   * {
     margin: 0;
@@ -106,7 +100,7 @@ export default {
     margin: 20rpx;
     height: 300rpx;
     width: 300rpx;
-    border: 1px solid red;
+    border: 1px solid #1296db;
   }
  
 </style>
