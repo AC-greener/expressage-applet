@@ -1,19 +1,13 @@
-<template name="9d7545f6">
-  <view class="_div data-v-8d8702ec container" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
-    <view class="_div data-v-8d8702ec swiper"> 轮播图 </view>
-    <view class="_div data-v-8d8702ec userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
-      <image class="_img data-v-8d8702ec userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <view class="_div data-v-8d8702ec userinfo-nickname"></view>
-    </view>
-    <view class="_div data-v-8d8702ec usermotto">
-      <view class="_div data-v-8d8702ec user-motto"></view>
-    </view>
-    <form class="_form data-v-8d8702ec form-container"><input type="text" class="_input data-v-8d8702ec form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'1'}}" data-comkey="{{$k}}" /> <input type="text" class="_input data-v-8d8702ec form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></form>
-    <view class="_div data-v-8d8702ec footerNav">
-      <view class="_div data-v-8d8702ec navItem">首页</view>
-      <view class="_div data-v-8d8702ec navItem">发布</view>
-      <view class="_div data-v-8d8702ec navItem">
-        <router-link to="/pages/my/index" class="_router-link data-v-8d8702ec">我的</router-link>
+<import src="/components/swiper.vue.wxml" /><template name="9d7545f6">
+  <view class="_div data-v-8d8702ec container" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"><template data="{{...$root[$kk+'0'], $root}}" is="89d4d65a"></template>
+    <view class="_div data-v-8d8702ec express-brand">
+      <view class="_div data-v-8d8702ec row">
+        <view class="_div data-v-8d8702ec brand-item"></view>
+        <view class="_div data-v-8d8702ec brand-item"></view>
+      </view>
+      <view class="_div data-v-8d8702ec row">
+        <view class="_div data-v-8d8702ec brand-item"></view>
+        <view class="_div data-v-8d8702ec brand-item"></view>
       </view>
     </view>
   </view>

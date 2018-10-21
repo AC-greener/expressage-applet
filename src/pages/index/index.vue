@@ -1,47 +1,44 @@
 <template>
   <div class="container" @click="clickHandle('test click', $event)">
-    <div class="swiper">
-      轮播图
-    </div>
-    <div class="userinfo" @click="bindViewTap">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <div class="userinfo-nickname">
+    <my-swiper/>
+    <div class="express-brand">
+      <div class="row">
+        <div class="brand-item"></div>
+        <div class="brand-item"></div>
+      </div>
+      <div class="row">
+        <div class="brand-item"></div>
+        <div class="brand-item"></div>
       </div>
     </div>
-    <div class="usermotto">
-      <div class="user-motto">
-      </div>
-    </div>
-
-    <form class="form-container">
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form>
-    <!-- <a href="/pages/counter/main" class="counter">去往Vuex示例页面 aa</a> -->
-    <div class="footerNav">
-      <div class="navItem">首页</div>
-      <div class="navItem">发布</div>
-      <div class="navItem">
-        <router-link to="/pages/my/index">我的</router-link>
-        <!-- <a href="/pages/my/main">我的</a> -->
-      </div>
-    </div> 
   </div>
 </template>
 
 <script>
+import MySwiper from '@/components/swiper'
 
 export default {
+  onReady () {
+    console.log("11111111111111")
+  },
+  components: {
+    MySwiper,
+  },
   data () {
     return {
-      motto: '佩奇',
+      imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      ],
+      indicatorDots: true,
+      autoplay: true,
+      interval: 3000,
+      duration: 1000,
+      indicatorColor: 'rgba(0, 0, 0, .7)',
       userInfo: {}
     }
   },
-
-  components: {
-  },
-
   methods: {
     bindViewTap () {
       const url = '../logs/main'
@@ -54,13 +51,14 @@ export default {
           wx.getUserInfo({
             success: (res) => {
               this.userInfo = res.userInfo
+              console.log(this.userInfo)
             }
           })
         }
       })
     },
     clickHandle (msg, ev) {
-      console.log('clickHandle:', msg, ev)
+      // console.log('clickHandle:', msg, ev)
     }
   },
 
@@ -72,12 +70,10 @@ export default {
 </script>
 
 <style scoped>
-html {
-  font-size: 10px;
-}
+
  .container {
     height: 100%;
-   
+
   }
   * {
     margin: 0;
@@ -90,20 +86,27 @@ html {
     -o-transition: width 2s;
   }
   .container {
-    height: 1000px;
+    height: 700px;
   }
-  .footerNav {
-    height: 30px;
-    display: inline-flex;
-    justify-content: space-between;
+  .express-brand {
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-top: 1px solid grey;
-    color: #666;
-    padding: 5px 25px 5px 25px;
-    /* padding-left: 20px; */
   }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .brand-item {
+    margin: 20rpx;
+    height: 300rpx;
+    width: 300rpx;
+    border: 1px solid red;
+  }
+ 
 </style>

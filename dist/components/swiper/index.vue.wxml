@@ -1,0 +1,8 @@
+<template name="100ed389">
+  <view class="_div data-v-5966e2d4">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" class="_swiper data-v-5966e2d4"> aa <view wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" class="_div data-v-5966e2d4">
+        {{item}}
+      </view>
+    </swiper> <button bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-5966e2d4"> indicator-dots </button> <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-5966e2d4"> autoplay </button>
+  </view>
+</template>
