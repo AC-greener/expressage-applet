@@ -8,8 +8,9 @@
 		"newFeature": true
 	},
 	"miniprogramRoot": "./dist/",
+	"qcloudRoot": "./server",
 	"compileType": "miniprogram",
-	"appid": "touristappid",
+	"appid": "wxdae72098fef4d281",
 	"projectname": "expressage-applet",
 	"condition": {
 		"search": {

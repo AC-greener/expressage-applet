@@ -1,18 +1,13 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/my/main",
-    "pages/logs/main"
+    "pages/my/main"
   ],
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/main",
         "text": "发布"
-      },
-      {
-        "pagePath": "pages/logs/main",
-        "text": "日志"
       },
       {
         "pagePath": "pages/my/main",
